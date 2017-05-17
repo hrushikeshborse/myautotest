@@ -1,5 +1,11 @@
 #!/bin/bash
 #This Comments line is compulsary"
-echo "Hello World"
+if [$# -eq 0 ]
+then
+    echo "No Parameter passed. Closing script" 
+else
+    echo "Hello World $1"
 
-echo "Welcome to Git Hib"
+    echo "Welcome to Git Hub $1"
+
+fi
